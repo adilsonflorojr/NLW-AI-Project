@@ -70,7 +70,7 @@ export function App() {
               <Label htmlFor="transcription">Prompt de transcrição</Label>
               <Textarea
                 id="transcription"
-                className="h-20 leading-relaxed"
+                className="h-20 leading-relaxed mt-10"
                 placeholder="Inclua palavras-chaves separadas por virgula."
               ></Textarea>
             </div>
