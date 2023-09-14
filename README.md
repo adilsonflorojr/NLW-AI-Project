@@ -1,8 +1,7 @@
 
 # NLW AI - Rocketseat - Projeto parcialmente completo
 
-Este é um projeto parcialmente completo que tem como objetivo realizar a transcrição de áudio para texto. Ele utiliza tecnologias front-end e back-end.
-
+Este é um projeto parcialmente completo que tem como objetivo realizar a transcrição de áudio para texto. 
 
 ## Tecnologias Utilizadas.
 
