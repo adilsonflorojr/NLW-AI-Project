@@ -43,13 +43,13 @@ export function App() {
               readOnly
             ></Textarea>
           </div>{" "}
-          <p className="text-violet-500">
+          <p className="text-violet-500 mt-3">
             Lembre-se: Pode se utilizar a variavel transcription em seu prompt
             para adicionar o conteudo da transcrição do video
           </p>
         </div>
         <aside className="w-60 space-y-4">
-          <form className="space-y-9  hover: bg-blue">
+          <form className="space-y-9 ">
             <label
               htmlFor="inputvideo"
               className="border leading-relaxed flex rounded-lg aspect-video cursor-pointer flex-col gap-3 items-center align-middle justify-center hover: bg-primary/8"
@@ -64,9 +64,9 @@ export function App() {
               className="sr-only"
             ></input>
           </form>
-          <form>
+          <form className="mt-3 space y-9 ">
             <Separator></Separator>
-            <div className="space-y-3">
+            <div className="space-y-">
               <Label htmlFor="transcription">Prompt de transcrição</Label>
               <Textarea
                 id="transcription"
@@ -74,28 +74,28 @@ export function App() {
                 placeholder="Inclua palavras-chaves separadas por virgula."
               ></Textarea>
             </div>
-            <Button type="submit" className="w-full">
-              Carregar video<Upload className="w-3 h-5 ml-3"></Upload>
-            </Button>
+            <div className="mt-5">
+              <Button type="submit" className="w-full">
+                Carregar video<Upload className="w-3 h-5 ml-3"></Upload>
+              </Button>
+            </div>
           </form>
           <Separator></Separator>
           <form className="space-y-3">
             <div className=" space-y-3">
               <Label>Modelo</Label>
-              <Select disabled defaultValue="GPT 3.5">
+              <Select  defaultValue="GPT 3.5">
                 <SelectTrigger>
                   <SelectValue></SelectValue>
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem defaultValue="GPT 3.5-turbo 16k">
+                  <SelectItem value="GPT 3.5-turbo 16k">
                     GPT 3.5-turbo 16k
                   </SelectItem>
                 </SelectContent>
               </Select>
               <Separator></Separator>
-              <span className="block italic">
-                Você poderá customizar essa opção em breve
-              </span>
+              
               <Separator></Separator>
               <div className="space-y-4">
                 <Label> Temperatura</Label>
